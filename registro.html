@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <script src="https://kit.fontawesome.com/0ea70f2481.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+</head>
+
+<body>
+    <!-- action hace que los datos del formulario se vayan para el ingreso en >>>action="Ingreso_datos.php"<<<< -->
+    <!-- importante poner method="POST" -- si no no ingresara datos<<<< -->
+    <form class="formulario"action="ingreso_datos.php" method="POST">
+        <h1>Registrate</h1>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <i class="fa-solid fa-face-smile icon"></i>
+                <input name="usuario"  type="text" placeholder="Usuario">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-user icon"></i>
+                <input name="nombre" type="text" placeholder="Nombre Completo">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input name="correo" type="text" placeholder="Correo Electronico">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <input name="contraseña" type="password" placeholder="Contraseña">
+            </div>
+            <div class="form-group">
+                <div class="col-md-12">
+                <button type="submit" class="btn btn-primary btn-lg btn-block info">Guardar</button>
+                </div>
+            </div>
+            <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+            <p>¿Ya tienes una cuenta?<a class="link" href="login.html">Iniciar Sesion</a></p>
+        </div>
+    </form>
+</body>
+
+</html>
